@@ -1,0 +1,22 @@
+#include <iostream>
+#include <tchar.h>
+
+int main()
+{
+	_tsetlocale(LC_ALL, _T("portuguese"));
+	double Numero;
+	bool ResultadoLogico, ResultadoLogico02;
+
+	std::cout << "Digite um Numero: ";
+	std::cin >> Numero;
+	std::cout << "True = 1 e False = 0" << "\n";
+
+	//A Variável boolena "MaiorQue100" irá receber...
+	//o valor lógico da comparação (Numero > 100)
+	//Número é maior que 100 (cem)?!
+	ResultadoLogico = ((Numero > 100) && (Numero != 0));
+	std::cout << "O Resultado Lógico da Expressão ((Numero > 100) && (Numero != 0)) é: " << ResultadoLogico << std::endl;
+	ResultadoLogico02 = ((Numero == 100) || (Numero > 200)) && (Numero < 1000);
+	std::cout << "O Resultado Lógico da Expressão ((Numero == 100) || (Numero > 200)) && (Numero < 1000); é: " << ResultadoLogico02 << std::endl;
+	system("PAUSE");
+}
