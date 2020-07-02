@@ -1,0 +1,37 @@
+#include <iostream>
+#include <locale.h>
+
+int main() 
+{
+	//'locale' da linguagem C!
+	setlocale(LC_ALL, "portuguese");
+	int escolha = 0;
+	do //As instruções abaixo serão executatas, pelo menos, uma vez!
+	{
+		std::cout << "****Tickets Cinema****" << std::endl;
+		std::cout << "\n1 - Para Inteira\n";
+		std::cout << "\n2 - Para Meia Entrada\n";
+		std::cout << "\n3 - Sair";
+		std::cout << "\nEscolha sua opção: ";
+		std::cin >> escolha;
+
+		switch (escolha)
+		{
+		case 1: std::cout << "\nTicket Inteira comprado\n";
+			//Sempre com 'break' para sair da opção!
+			break;
+		case 2: std::cout << "\nTicket Meia Entrada comprado\n";
+			break;
+		case 3: std::cout << "\nSaindo Meu Tickets...\n";
+			break;
+		default: std::cout << "\nOpção Inválida!!!\n";
+		}
+
+	} while (escolha != 3); /*Enquanto a escolha for diferente de 3, o menu seguirá aparecendo, 
+							pois solicitá-se que fique em LOOP, até que a opção 3 seja selecionada
+							, e o resultado seja falso, o que ocasionará a "saída" do LOOP do "while", ok?!*/
+	
+	system("PAUSE");
+	return 0;
+
+}
