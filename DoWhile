@@ -27,9 +27,8 @@ int main()
 		default: std::cout << "\nOpção Inválida!!!\n";
 		}
 
-	} while (escolha != 3); /*Enquanto a escolha for diferente de 3, o menu seguirá aparecendo, 
-							pois solicitá-se que fique em LOOP, até que a opção 3 seja selecionada
-							, e o resultado seja falso, o que ocasionará a "saída" do LOOP do "while", ok?!*/
+	} while (escolha != 3); /*Enquanto a escolha for diferente de 3, o menu seguirá aparecendo, pois solicitá-se que fique em LOOP, até que a opção 3 seja selecionada, 
+	e o resultado seja falso, o que ocasionará a "saída" do LOOP do "while", ok?!*/
 	
 	system("PAUSE");
 	return 0;
