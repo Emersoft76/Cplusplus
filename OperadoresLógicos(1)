@@ -1,0 +1,17 @@
+int main()
+{
+	_tsetlocale(LC_ALL, _T("portuguese"));
+	double Numero;
+	bool MaiorQue100;
+
+	std::cout << "Digite um Numero: ";
+	std::cin >> Numero;
+	std::cout << "True = 1 e False = 0" << "\n";
+
+	//A Variável boolena "MaiorQue100" irá receber...
+	//o valor lógico da comparação (Numero > 100)
+	//Número é maior que 100 (cem)?!
+	MaiorQue100 = (Numero > 100);
+	std::cout << "O Resultado Lógico que verifica se o Número Digitado é maior que 100 é: " << MaiorQue100 << std::endl;
+	system("PAUSE");
+}
